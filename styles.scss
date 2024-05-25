@@ -23,6 +23,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: aliceblue;
+  z-index: 999;
   .logo {
     user-select: none;
     font-weight: bold;
@@ -81,6 +83,7 @@ main {
     }
     .right {
       .box {
+        margin: 0 auto;
         position: relative;
         width: 400px;
         height: 400px;
@@ -209,5 +212,24 @@ main {
   }
   0% {
     transform: rotate(360deg);
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  .left {
+    img {
+      max-width: 300px;
+    }
+  }
+  .right {
+    h2 {
+      font-size: 2.5rem;
+    }
+    p {
+      line-height: 1.5rem;
+    }
   }
 }
